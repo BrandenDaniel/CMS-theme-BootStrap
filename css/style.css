@@ -155,6 +155,16 @@ body {
 
 #main {
   flex-grow: 1;
+
+}
+
+.login label {
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.login a {
+  color: inherit;
 }
 
 /*Table*/
