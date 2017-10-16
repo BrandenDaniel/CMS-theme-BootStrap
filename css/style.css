@@ -1,5 +1,8 @@
 body {
   background: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 
@@ -91,6 +94,28 @@ body {
   color: #fff;
 }
 
+#dot {
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.live-visitors {
+  font-size: .80em;
+}
+
+.edit-remove-btn {
+  padding: .5em;
+}
+
+.edit-remove-btn a {
+  text-decoration: none;
+  color: inherit;
+  padding: .75em;
+}
+
 /*Header*/
 #header {
   background-color: #333;
@@ -128,10 +153,25 @@ body {
   margin: 15px 0;
 }
 
+#main {
+  flex-grow: 1;
+}
+
 /*Table*/
 .tablehead {
   background: #ccc !important;
   color: #333;
+}
+
+/*footer*/
+#footer {
+  text-align: center;
+  background-color: #333;
+  padding: 10px;
+}
+
+#footer small {
+  color: #fff;
 }
 
 

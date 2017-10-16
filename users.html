@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
-    <title>Admin Area | Dashboard</title>
+    <title>Admin Area | Users</title>
   </head>
   <body>
 
@@ -21,10 +21,10 @@
       <a class="navbar-brand" href="#">AdminBoard</a>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
         <div class="navbar-nav">
-          <a class="nav-item nav-link active text-white" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
+          <a class="nav-item nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="pages.html">Pages</a>
           <a class="nav-item nav-link" href="posts.html">Posts</a>
-          <a class="nav-item nav-link" href="users.html">Users</a>
+          <a class="nav-item nav-link active text-white" href="users.html">Users</a>
         </div>
       </div>
 
@@ -43,7 +43,7 @@
       <div class="container">
         <div class="row">
           <div class="col-md-10">
-            <h1><i class="fa fa-cog" aria-hidden="true"></i> Dashboard <small>Manage Your Site</small></h1>
+            <h1><i class="fa fa-cog" aria-hidden="true"></i> Users <small>Manage Site Users</small></h1>
           </div>
 
           <div class="col-md-2">
@@ -68,7 +68,8 @@
     <!-- Breadcrumb -->
     <section id="breadcrumb" class="container">
       <nav class="breadcrumb container">
-        <a class="breadcrumb-item active" href="#">Dashboard</a>
+        <a class="breadcrumb-item" href="index.html">Dashboard</a>
+        <a class="breadcrumb-item active" href="users.html">Users</a>
       </nav>
     </section>
 
@@ -77,9 +78,7 @@
       <div class="row">
         <div class="col-md-3">
           <div class="list-group">
-            <a href="#" class="list-group-item active main-color-bg2"
-            ><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Dashboard
-            </a>
+            <a href="index.html" class="list-group-item active main-color-bg2"><i class="fa fa-cog fa-fw" aria-hidden="true"></i> Dashboard</a>
             <a href="pages.html" class="list-group-item list-group-item-action"><i class="fa fa-list-alt fa-fw" aria-hidden="true"></i>Pages <span class="badge badge-pill badge-default ml-auto">12</span></a>
             <a href="posts.html" class="list-group-item list-group-item-action"><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>Posts <span class="badge badge-pill badge-default ml-auto">26</span></a>
             <a href="users.html" class="list-group-item list-group-item-action"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Users <span class="badge badge-pill badge-default ml-auto">54</span></a>
@@ -113,86 +112,86 @@
         <div class="col-md-9" id="website-overview">
           <div class="card">
             <div class="card-header main-color-bg">
-              Website Overview
+              Users
             </div>
-            <div class="container my-3">
-              <div class="row">
-                <div class="col-md-4">
-                  <div class="card my-1">
-                    <div class="card-block text-center">
-                      <h2><i class="fa fa-list fa-fw" aria-hidden="true"></i>12</h2>
-                      <h4>Pages</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card my-1">
-                    <div class="card-block text-center">
-                      <h2><i class="fa fa-pencil fa-fw" aria-hidden="true"></i>26</h2>
-                      <h4>Posts</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-md-4">
-                  <div class="card my-1">
-                    <div class="card-block text-center">
-                      <h2><i class="fa fa-user fa-fw" aria-hidden="true"></i>54</h2>
-                      <h4>Users</h4>
-                    </div>
-                  </div>
-                </div>
-              </div>
+            <div class="card mx-3 mt-3">
+              <input type="text" class-"form-control" placeholder="Filter Users..">
             </div>
-          </div>
-
-          <!-- Latest Users -->
-          <div class="row">
-            <div class="col-md-12">
-              <div class="card my-3">
-                <div class="card-header">
-                  <h3>Latest Users</h3>
-                </div>
-                <div class="card-block">
-                  <table class="table table-striped">
-                    <tr class="tablehead">
-                      <th>Name</th>
-                      <th>Email</th>
-                      <th>Joined</th>
-                    </tr>
-                    <tr>
-                      <td>Branden Ng</td>
-                      <td>brandendng@gmail.com</td>
-                      <td>June 28, 2017</td>
-                    </tr>
-                    <tr>
-                      <td>William Martin</td>
-                      <td>WilliamBMartin@gmail.com</td>
-                      <td>February 5, 2016</td>
-                    </tr>
-                    <tr>
-                      <td>Eric Smith</td>
-                      <td>EricMSmith@gmail.com</td>
-                      <td>March 8, 2016</td>
-                    </tr>
-                    <tr>
-                      <td>Carmen Davis</td>
-                      <td>CarmenCDavis@gmail.com</td>
-                      <td>April 17, 2016</td>
-                    </tr>
-                    <tr>
-                      <td>Tony Howard</td>
-                      <td>TonyRHoward@gmail.com</td>
-                      <td>September 17, 2017</td>
-                    </tr>
-                    <tr>
-                      <td>Richard Felder</td>
-                      <td>RichardJFelder@gmail.com</td>
-                      <td>September 25, 2017</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-            </div>
+            <div class="card-block ">
+              <table class="table table-striped">
+              <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Joined</th>
+                <th></th>
+              </tr>
+              <tr>
+                <td>Branden Ng</td>
+                <td>brandendng@gmail.com</td>
+                <td>June 28, 2017</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary edit-remove-btn"><a href="edit.html">Edit</a></button>
+                    <button type="button" class="btn btn-danger edit-remove-btn">Remove</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>William Martin</td>
+                <td>WilliamBMartin@gmail.com</td>
+                <td>February 5, 2016</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary edit-remove-btn"><a href="edit.html">Edit</a></button>
+                    <button type="button" class="btn btn-danger edit-remove-btn">Remove</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Eric Smith</td>
+                <td>EricMSmith@gmail.com</td>
+                <td>March 8, 2016</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary edit-remove-btn"><a href="edit.html">Edit</a></button>
+                    <button type="button" class="btn btn-danger edit-remove-btn">Remove</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Carmen Davis</td>
+                <td>CarmenCDavis@gmail.com</td>
+                <td>April 17, 2016</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary edit-remove-btn"><a href="edit.html">Edit</a></button>
+                    <button type="button" class="btn btn-danger edit-remove-btn">Remove</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Tony Howard</td>
+                <td>TonyRHoward@gmail.com</td>
+                <td>September 17, 2017</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary edit-remove-btn"><a href="edit.html">Edit</a></button>
+                    <button type="button" class="btn btn-danger edit-remove-btn">Remove</button>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>Richard Felder</td>
+                <td>RichardJFelder@gmail.com</td>
+                <td>September 25, 2017</td>
+                <td>
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn btn-secondary edit-remove-btn"><a href="edit.html">Edit</a></button>
+                    <button type="button" class="btn btn-danger edit-remove-btn">Remove</button>
+                  </div>
+                </td>
+              </tr>
+            </table>
           </div>
         </div>
       </div>
