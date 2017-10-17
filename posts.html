@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font-Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- CDEditor -->
     <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
-    <title>Admin Area | Posts</title>
+    <title>Admin Area | Dashboard</title>
   </head>
   <body>
 
     <!-- Navbar -->
   <div class="container-fluid m-0">
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-default container">
+    <nav class="navbar navbar-toggleable-sm navbar-light bg-faded navbar-default container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">AdminBoard</a>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <div id="dashboard" class="navbar-nav">
           <a class="nav-item nav-link" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="pages.html">Pages</a>
           <a class="nav-item nav-link active text-white" href="posts.html">Posts</a>
@@ -41,7 +45,7 @@
     <!-- Header -->
     <header id="header">
       <div class="container">
-        <div class="row">
+        <div class="row container">
           <div class="col-md-10">
             <h1><i class="fa fa-cog" aria-hidden="true"></i> Posts <small>Manage Blog Posts</small></h1>
           </div>
@@ -112,14 +116,14 @@
         <div class="col-md-9" id="website-overview">
           <div class="card">
             <div class="card-header main-color-bg">
-              Posts
+              <h2>Posts</h2>
             </div>
             <div class="card mx-3 mt-3">
               <input type="text" class-"form-control" placeholder="Filter Posts..">
             </div>
             <div class="card-block">
               <table class="table table-striped">
-              <tr>
+              <tr class="tablehead">
                 <th>Title</th>
                 <th>Published</th>
                 <th>Created</th>

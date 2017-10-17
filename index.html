@@ -4,23 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Font-Awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <!-- Custom Styles -->
     <link rel="stylesheet" href="css/style.css">
+    <!-- CDEditor -->
     <script src="https://cdn.ckeditor.com/4.7.3/standard/ckeditor.js"></script>
     <title>Admin Area | Dashboard</title>
   </head>
   <body>
 
-    <!-- Navbar -->
+  <!-- Navbar -->
   <div class="container-fluid m-0">
-    <nav class="navbar navbar-toggleable-md navbar-light bg-faded navbar-default container">
+    <nav class="navbar navbar-toggleable-sm navbar-light bg-faded navbar-default container">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <a class="navbar-brand" href="#">AdminBoard</a>
       <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-        <div class="navbar-nav">
+        <div id="dashboard" class="navbar-nav">
           <a class="nav-item nav-link active text-white" href="index.html">Dashboard <span class="sr-only">(current)</span></a>
           <a class="nav-item nav-link" href="pages.html">Pages</a>
           <a class="nav-item nav-link" href="posts.html">Posts</a>
@@ -41,7 +45,7 @@
     <!-- Header -->
     <header id="header">
       <div class="container">
-        <div class="row">
+        <div class="row container">
           <div class="col-md-10">
             <h1><i class="fa fa-cog" aria-hidden="true"></i> Dashboard <small>Manage Your Site</small></h1>
           </div>
@@ -85,7 +89,7 @@
             <a href="users.html" class="list-group-item list-group-item-action"><i class="fa fa-user fa-fw" aria-hidden="true"></i>Users <span class="badge badge-pill badge-default ml-auto">54</span></a>
           </div>
 
-          <div class="card my-2">
+          <div id="side-info" class="card my-2">
             <div class="card-block">
               <h5>Disk Space Used</h4>
               <div class="progress">
@@ -100,7 +104,7 @@
             </div>
           </div>
 
-          <div class="card my-2 live-visitors">
+          <div id="side-info" class="card my-2 live-visitors">
             <div class="card-block">
               <h5>Live Visitors <div id="dot" class="mx-1"></div></h5>
               <hr>
@@ -113,7 +117,7 @@
         <div class="col-md-9" id="website-overview">
           <div class="card">
             <div class="card-header main-color-bg">
-              Website Overview
+              <h2>Website Overview</h2>
             </div>
             <div class="container my-3">
               <div class="row">
@@ -325,7 +329,7 @@
     <script>
 			CKEDITOR.replace( 'editor1' );
     </script>
-    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   </body>

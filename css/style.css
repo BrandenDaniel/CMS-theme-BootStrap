@@ -142,6 +142,14 @@ body {
   color: #333;
 }
 
+h2 {
+  font-size: 1.2em;
+}
+
+#header small {
+  font-size: .6em;
+}
+
 /*Progress bar*/
 .progress-bar {
   background-color: #333;
@@ -173,11 +181,16 @@ body {
   color: #333;
 }
 
+.scroll {
+  overflow-x: scroll;
+}
+
 /*footer*/
 #footer {
   text-align: center;
   background-color: #333;
   padding: 10px;
+  margin-top: 3em;
 }
 
 #footer small {
